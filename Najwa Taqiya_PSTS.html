@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <header class="bg-blue-700 text-white shadow-md">
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <header class="bg-red-900 text-white shadow-md">
     <div class="max-w-5xl mx-auto px-6 py-8 text-center">
         <h1 class="text-3xl md:text-4xl font-bold">Inaguration Festival</h1>
         <p class="mt-2 text-blue-100">Showcase Your Creativity, Skills and Inovation Ideas</p>
@@ -12,18 +13,79 @@
 </header>
 </head>
 <body>
-    <input
-  class="placeholder:text-gray-500 placeholder:italic ..."
-  placeholder="Enter your full name"
-  type="text"
-  name="search"
-/>
+    <div>
+        <label for="Student Name"
+                class="block text-sm font-semibold text-gray-700 mb-2">Student Name:</label>
+        <input
+            type="text"
+            id="Student Name"
+            name="Student Name"
+            placeholder="Enter your full name"
+            required
+            class="w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-700 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition">
+    </div>
+<label for ="class">Class:</label>
+<select id="class" name="class">
+    <option value="X">X</option>
+    <option value="XI">XI</option>
+    <option value="XII">XII</option>
+</select>
+
 <fieldset>
   <legend>Gender</legend>
   <input id="Male" class="peer/Male" type="radio" name="status" checked />
   <label for="Male" class="peer-checked/Male:text-sky-500">Male</label>
   <input id="Female" class="peer/Female" type="radio" name="status" />
   <label for="Female" class="peer-checked/Female:text-sky-500">Female</label>
-</fieldset>
+</fieldset><br>
+
+<label for ="Competition">Competition Category:</label>
+<select id="Competition" name="Competition">
+    <option value="Web Development">Web Development</option>
+    <option value="IoT Project">IoT Project</option>
+    <option value="Graphic Design">Graphic Desain</option>
+    <option value="Public Speaking">Public Speaking</option>
+    <option value="Photography">Photography</option>
+</select><br>
+
+<fieldset>
+  <legend>Participation Type</legend>
+  <input id="Individual" class="peer/Individual" type="radio" name="status" checked />
+  <label for="Individual" class="peer-checked/Individual:text-sky-500">Individual</label>
+  <input id="Team" class="peer/Team" type="radio" name="status" />
+  <label for="Team" class="peer-checked/Team:text-sky-500">Team</label>
+</fieldset><br>
+<div>
+        <label for="Team Name"
+                class="block text-sm font-semibold text-gray-700 mb-2">Team Name:</label>
+        <input
+            type="text"
+            id="Team Name"
+            name="Team Name"
+            placeholder="Enter your name" required
+            class="w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-700 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition">
+    </div>
+<div>
+        <label for="Contact Number"
+                class="block text-sm font-semibold text-gray-700 mb-2">Contact Number:</label>
+        <input
+            type="text"
+            id="Contact Number"
+            name="Contact Number"
+            placeholder="08xxxxx" required
+            class="w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-700 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition">
+    </div>
+<div>
+        <label for="Project Description"
+                class="block text-sm font-semibold text-gray-700 mb-2">Project Description:</label>
+        <input
+            type="text"
+            id="Project Description"
+            name="Project Description"
+            placeholder="Describe your project" required
+            class="w-full rounded-lg border border-gray-300 px-4 py-3 text-gray-700 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition">
+    </div>
+<button class="rounded-br">Register Now</button>
+
 </body>
 </html>
